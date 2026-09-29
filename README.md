@@ -11,12 +11,14 @@ Proyecto Final 2627-1 · Sistemas de Información (FPTSP04) · Prof. Franklin Sa
 
 ## Equipo
 
-- Vincenzo Gallo
-- Armando Suárez
-- Daniel Da Silva
-- Adriana Julian
-- José Martínez
-- Samuel Djekki
+| Integrante | Cédula |
+|---|---|
+| Vincenzo Gallo | V-31.985.476 |
+| Armando Suárez | V-31.623.487 |
+| Daniel Da Silva | V-32.560.909 |
+| Adriana Julian | V-28.424.728 |
+| José Martínez | V-32.504.707 |
+| Samuel Djekki | V-27.703.521 |
 
 ## Tecnologías
 
