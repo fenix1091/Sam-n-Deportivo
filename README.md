@@ -1,14 +1,73 @@
-# Saman-Deportivo
-Plataforma de Gestión de Clubes Deportivos para la comunidad de la Universidad Metropolitana.
+<p align="center"><img src="design/marca/logo_horizontal.png" width="360" alt="Samán Deportivo"></p>
 
-## Descripción 
+# Samán Deportivo
 
-## Repositorio 
-URL: https://github.com/fenix1091/Saman-Deportivo
+Plataforma web y móvil (PWA) para la gestión de clubes deportivos de la comunidad de la
+Universidad Metropolitana (UNIMET). Permite consultar la oferta de disciplinas, ver los cupos
+en tiempo real, inscribirse con validación de solvencia y pago en línea, tomar asistencia y
+administrar deportes, entrenadores y horarios.
 
-## Librerías y herramientas empleadas
-* **Lenguaje:** Futter
-* **Versiones:** Git y Github
+Proyecto Final 2627-1 · Sistemas de Información (FPTSP04) · Prof. Franklin Sandoval.
 
----
-*Universidad Metropolitana - Estructuras de Datos*
+## Equipo
+
+- Vincenzo Gallo
+- Armando Suárez
+- Daniel Da Silva
+- Adriana Julian
+- José Martínez
+- Samuel Djekki
+
+## Tecnologías
+
+- **Flutter** (web PWA, Android, iOS) con arquitectura MVVM, `provider` y `go_router`.
+- **Firebase**: Authentication, Cloud Firestore, Cloud Storage, Cloud Functions y Hosting.
+- **PayPal** (sandbox) para la reserva de cupos.
+- **Figma** para el prototipo: [enlace al prototipo]
+
+## Estructura
+
+```
+lib/
+  core/          rutas, tema (colores y tipografía), constantes
+  models/        Persona, Estudiante, Entrenador, Deporte, Horario, Inscripcion, Pago, Asistencia, Resena
+  repositories/  acceso a Firestore, Auth, Storage y Cloud Functions
+  viewmodels/    estado de cada pantalla (ChangeNotifier)
+  views/         pantallas por rol: publico, estudiante, entrenador, admin
+  widgets/       componentes reutilizables
+functions/       Cloud Functions (validar solvencia, confirmar pago, estadísticas)
+docs/            documentos de OpenUP (docs/hito1) y diagramas UML en PlantUML (docs/uml)
+design/          logo, paleta y maquetas de las vistas
+test/            pruebas unitarias y de widgets
+```
+
+## Cómo ejecutar
+
+```bash
+# 1. Generar las carpetas de plataforma (no reemplaza lib/)
+flutter create . --platforms=web,android,ios --org ve.edu.unimet
+
+# 2. Descargar dependencias y ejecutar en el navegador
+flutter pub get
+flutter run -d chrome
+```
+
+La conexión con Firebase se configura en la fase de Elaboración (Hito 2) con
+`flutterfire configure`.
+
+## Flujo de trabajo
+
+- `main`: versión estable, se actualiza al cerrar cada hito.
+- `develop`: integración de funcionalidades terminadas.
+- `feature/<nombre>`: una rama por funcionalidad; se integra a `develop` con un pull request
+  revisado por otro integrante.
+- Mensajes de commit con prefijo: `feat`, `fix`, `docs`, `style`, `refactor`, `test`.
+
+Más detalle en [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Hitos (OpenUP)
+
+- [x] **Hito 1 · Concepción**: visión, requisitos, UML, marca, prototipo y repositorio ([documento](docs/hito1/Hito1_Saman_Deportivo.pdf)).
+- [ ] **Hito 2 · Elaboración**: arquitectura, Firebase, registro, inicio de sesión y perfil.
+- [ ] **Hito 3 · Construcción**: catálogo, inscripciones, entrenadores, administración, pagos y reseñas.
+- [ ] **Hito 4 · Transición**: pruebas, PWA, despliegue en Firebase Hosting y manuales.
