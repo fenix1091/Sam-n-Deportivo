@@ -71,7 +71,7 @@ Más detalle en [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Hitos (OpenUP)
 
-- [x] **Hito 1 · Concepción**: visión, requisitos, UML, marca, prototipo y repositorio ([documento](docs/hito1/Hito1_Saman_Deportivo.pdf)).
+- [x] **Hito 1 · Concepción**: visión, requisitos, UML, marca, prototipo y repositorio ([documento en Word](docs/hito1/Hito1_Saman_Deportivo.docx)).
 - [ ] **Hito 2 · Elaboración**: arquitectura, Firebase, registro, inicio de sesión y perfil.
 - [ ] **Hito 3 · Construcción**: catálogo, inscripciones, entrenadores, administración, pagos y reseñas.
 - [ ] **Hito 4 · Transición**: pruebas, PWA, despliegue en Firebase Hosting y manuales.
