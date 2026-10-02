@@ -11,21 +11,23 @@ Proyecto Final 2627-1 · Sistemas de Información (FPTSP04) · Prof. Franklin Sa
 
 ## Equipo
 
-| Integrante | Cédula |
-|---|---|
-| Vincenzo Gallo | V-31.985.476 |
-| Armando Suárez | V-31.623.487 |
-| Daniel Da Silva | V-32.560.909 |
-| Adriana Julian | V-28.424.728 |
-| José Martínez | V-32.504.707 |
-| Samuel Djekki | V-27.703.521 |
+| Integrante | Cédula | Rol |
+|---|---|---|
+| Vincenzo Gallo | V-31.985.476 | Líder de proyecto / Analista |
+| Armando Suárez | V-31.623.487 | Desarrollador Flutter (Administrador) / Arquitecto |
+| Daniel Da Silva | V-32.560.909 | Desarrollador Flutter (Estudiante y Entrenador) |
+| Adriana Julian | V-28.424.728 | Diseñadora UX/UI |
+| José Martínez | V-32.504.707 | Desarrollador Firebase |
+| Samuel Djekki | V-27.703.521 | Diseñador UX/UI |
+
+Las pruebas y la documentación las comparte todo el equipo.
 
 ## Tecnologías
 
 - **Flutter** (web PWA, Android, iOS) con arquitectura MVVM, `provider` y `go_router`.
 - **Firebase**: Authentication, Cloud Firestore, Cloud Storage, Cloud Functions y Hosting.
 - **PayPal** (sandbox) para la reserva de cupos.
-- **Figma** para el prototipo: [enlace al prototipo]
+- **Figma** para el prototipo: [prototipo en Figma](https://www.figma.com/proto/NnL18RHGqI9u4ddKXQUGnE/Sam%C3%A1n-Deportivo)
 
 ## Estructura
 

@@ -94,7 +94,10 @@ class Pago {
 
 class Asistencia {
   - id : String
-  - fechaEntrenamiento : Date
+  - inscripcion : Inscripcion
+  - estudiante : Estudiante
+  - deporte : Deporte
+  - fecha : Date
   - estado : EstadoAsistencia
   - observacion : String
 }
@@ -148,7 +151,8 @@ Estudiante "1" -- "0..*" Inscripcion : realiza >
 Deporte "1" -- "0..*" Inscripcion : recibe >
 Inscripcion "1" -- "0..1" Pago : se garantiza con >
 Inscripcion "1" *-- "0..*" Asistencia : registra >
-Deporte "1" -- "0..*" Asistencia
+Deporte "1" -- "0..*" Asistencia : controla >
+Estudiante "1" -- "0..*" Asistencia : tiene >
 Entrenador "1" -- "0..*" Asistencia : toma >
 Estudiante "1" -- "0..*" Resena : escribe >
 Deporte "1" -- "0..*" Resena : recibe >
